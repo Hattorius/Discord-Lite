@@ -1,0 +1,84 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="84" d:DesignHeight="24"
+             MinHeight="24"
+             MinWidth="84"
+             Background="Transparent"
+             x:Class="Discord_Lite.Assets.LoadingDots">
+    
+    <UserControl.Styles>
+        <Style Selector="Ellipse#Circle1">
+            <Style.Animations>
+                <Animation Duration="0:0:2" IterationCount="INFINITE">
+                    <KeyFrame Cue="0%">
+                        <Setter Property="Width" Value="0"/>
+                        <Setter Property="Height" Value="0"/>
+                        <Setter Property="Margin" Value="12"/>
+                    </KeyFrame>
+                    <KeyFrame Cue="16.667%">
+                        <Setter Property="Width" Value="24"/>
+                        <Setter Property="Height" Value="24"/>
+                        <Setter Property="Margin" Value="0"/>
+                    </KeyFrame>
+                    <KeyFrame Cue="33.333%">
+                        <Setter Property="Width" Value="0"/>
+                        <Setter Property="Height" Value="0"/>
+                        <Setter Property="Margin" Value="12"/>
+                    </KeyFrame>
+                </Animation>
+            </Style.Animations>
+        </Style>
+        
+        <Style Selector="Ellipse#Circle2">
+            <Style.Animations>
+                <Animation Duration="0:0:2" Delay="0:0:0.4" IterationCount="INFINITE">
+                    <KeyFrame Cue="0%">
+                        <Setter Property="Width" Value="0"/>
+                        <Setter Property="Height" Value="0"/>
+                        <Setter Property="Margin" Value="12"/>
+                    </KeyFrame>
+                    <KeyFrame Cue="16.667%">
+                        <Setter Property="Width" Value="24"/>
+                        <Setter Property="Height" Value="24"/>
+                        <Setter Property="Margin" Value="0"/>
+                    </KeyFrame>
+                    <KeyFrame Cue="33.333%">
+                        <Setter Property="Width" Value="0"/>
+                        <Setter Property="Height" Value="0"/>
+                        <Setter Property="Margin" Value="12"/>
+                    </KeyFrame>
+                </Animation>
+            </Style.Animations>
+        </Style>
+        
+        <Style Selector="Ellipse#Circle3">
+            <Style.Animations>
+                <Animation Duration="0:0:2" Delay="0:0:0.8" IterationCount="INFINITE">
+                    <KeyFrame Cue="0%">
+                        <Setter Property="Width" Value="0"/>
+                        <Setter Property="Height" Value="0"/>
+                        <Setter Property="Margin" Value="12"/>
+                    </KeyFrame>
+                    <KeyFrame Cue="16.667%">
+                        <Setter Property="Width" Value="24"/>
+                        <Setter Property="Height" Value="24"/>
+                        <Setter Property="Margin" Value="0"/>
+                    </KeyFrame>
+                    <KeyFrame Cue="33.333%">
+                        <Setter Property="Width" Value="0"/>
+                        <Setter Property="Height" Value="0"/>
+                        <Setter Property="Margin" Value="12"/>
+                    </KeyFrame>
+                </Animation>
+            </Style.Animations>
+        </Style>
+    </UserControl.Styles>
+    
+    <Canvas Background="Transparent">
+        <Ellipse Name="Circle1" Fill="White" Canvas.Left="0" Canvas.Top="0"/>
+        <Ellipse Name="Circle2" Fill="White" Canvas.Left="30" Canvas.Top="0"/>
+        <Ellipse Name="Circle3" Fill="White" Canvas.Left="60" Canvas.Top="0"/>
+    </Canvas>
+</UserControl>
