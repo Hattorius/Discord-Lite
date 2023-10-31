@@ -10,5 +10,6 @@ public class LoginViewModel
     public void OnLoginButtonClick()
     {
         // TODO: Login logic
+        
     }
 }
