@@ -1,18 +1,8 @@
-<Window xmlns="https://github.com/avaloniaui"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-        x:Class="Discord_Lite.LoginWindow"
-        Title="LoginWindow"
-        ExtendClientAreaToDecorationsHint="True"
-        MinWidth="520"
-        MinHeight="404"
-        Background="#1e1f22"
-        FontSize="16"
-        FontWeight="400"
-        Foreground="#b5bac1"
-        FontFamily="Helvetica">
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:viewModels="clr-namespace:Discord_Lite.ViewModels"
+             x:Class="Discord_Lite.Views.LoginView"
+             x:DataType="viewModels:LoginViewModel">
     <Border
         CornerRadius="5"
         Background="#313338"
@@ -73,7 +63,8 @@
                 Padding="16, 2"
                 Margin="0, 16"
                 Background="#5865f2"
-                Foreground="#fff">
+                Foreground="#fff"
+                Command="{Binding OnLoginButtonClick}">
                 <TextBlock
                     VerticalAlignment="Center"
                     TextAlignment="Center">
@@ -82,4 +73,4 @@
             </Button>
         </StackPanel>
     </Border>
-</Window>
+</UserControl>
