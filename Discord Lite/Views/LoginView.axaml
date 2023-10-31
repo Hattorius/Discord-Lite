@@ -2,7 +2,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:viewModels="clr-namespace:Discord_Lite.ViewModels"
              x:Class="Discord_Lite.Views.LoginView"
-             x:DataType="viewModels:LoginViewModel">
+             x:DataType="viewModels:LoginViewModel"
+             xmlns:assets="clr-namespace:Discord_Lite.Assets">
     <Border
         CornerRadius="5"
         Background="#313338"
@@ -65,11 +66,18 @@
                 Background="#5865f2"
                 Foreground="#fff"
                 Command="{Binding OnLoginButtonClick}">
-                <TextBlock
-                    VerticalAlignment="Center"
-                    TextAlignment="Center">
-                    Log In
-                </TextBlock>
+                <Panel>
+                    <TextBlock
+                        VerticalAlignment="Center"
+                        TextAlignment="Center"
+                        IsVisible="{Binding !IsLoginLoading}">
+                        Log In
+                    </TextBlock>
+                    <assets:LoadingDots
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        IsVisible="{Binding IsLoginLoading}"/>
+                </Panel>
             </Button>
         </StackPanel>
     </Border>
