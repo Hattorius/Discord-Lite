@@ -6,6 +6,7 @@ namespace Discord_Lite;
 
 public partial class App : Application
 {
+    
     public override void Initialize()
     {
         AvaloniaXamlLoader.Load(this);
@@ -19,5 +20,10 @@ public partial class App : Application
         }
 
         base.OnFrameworkInitializationCompleted();
+    }
+
+    public void SwitchToMain()
+    {
+        
     }
 }

@@ -8,9 +8,12 @@ namespace Discord_Lite.Views;
 
 public partial class LoginView : UserControl
 {
-    public LoginView()
+    public LoginView(MainWindow mainWindow)
     {
         InitializeComponent();
-        DataContext = new LoginViewModel();
+        DataContext = new LoginViewModel()
+        {
+            MainWindow = mainWindow
+        };
     }
 }

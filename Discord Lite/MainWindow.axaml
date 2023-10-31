@@ -4,6 +4,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="Discord_Lite.MainWindow"
-        Title="Discord_Lite">
-    Welcome to Avalonia!
+        Title="Discord_Lite"
+        xmlns:assets="clr-namespace:Discord_Lite.Assets"
+        xmlns:views="clr-namespace:Discord_Lite.Views"
+        ExtendClientAreaToDecorationsHint="True"
+        MinWidth="520"
+        MinHeight="404"
+        Background="#1e1f22"
+        FontSize="16"
+        FontWeight="400"
+        Foreground="#b5bac1"
+        FontFamily="Helvetica">
+    <Panel Name="Holder">
+    </Panel>
 </Window>
