@@ -16,18 +16,16 @@ public class LoginViewModel : INotifyPropertyChanged
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsLoginLoading)));
         }
     }
-
-    private bool _deBounce;
     
     public void OnLoginButtonClick()
     {
-        if (_deBounce) return;
-        _deBounce = true;
+        if (IsLoginLoading) return;
         IsLoginLoading = true;
         
         // TODO: Login logic
+        MainWindow?.SwitchToMain();
 
-        _deBounce = false;
+        IsLoginLoading = false;
     }
     
     public event PropertyChangedEventHandler? PropertyChanged;

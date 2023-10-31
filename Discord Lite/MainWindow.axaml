@@ -15,6 +15,7 @@
         FontWeight="400"
         Foreground="#b5bac1"
         FontFamily="Helvetica">
-    <Panel Name="Holder">
+    <Panel>
+        <Panel Name="ContentHolder"></Panel>
     </Panel>
 </Window>

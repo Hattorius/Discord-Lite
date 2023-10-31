@@ -9,9 +9,18 @@ namespace Discord_Lite;
 
 public partial class MainWindow : Window
 {
+    private AppView _appView;
+    
     public MainWindow()
     {
         InitializeComponent();
-        Holder.Children.Add(new LoginView(this));
+        _appView = new AppView();
+        ContentHolder.Children.Add(new LoginView(this));
+    }
+
+    public void SwitchToMain()
+    {
+        ContentHolder.Children.Clear();
+        ContentHolder.Children.Add(_appView);
     }
 }

@@ -7,6 +7,7 @@
         <entry key="Discord Lite/Assets/LoadingDots.axaml" value="Discord Lite/Discord Lite.csproj" />
         <entry key="Discord Lite/LoginWindow.axaml" value="Discord Lite/Discord Lite.csproj" />
         <entry key="Discord Lite/MainWindow.axaml" value="Discord Lite/Discord Lite.csproj" />
+        <entry key="Discord Lite/Views/AppView.axaml" value="Discord Lite/Discord Lite.csproj" />
         <entry key="Discord Lite/Views/LoginView.axaml" value="Discord Lite/Discord Lite.csproj" />
       </map>
     </option>
