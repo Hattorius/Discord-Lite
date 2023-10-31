@@ -29,10 +29,4 @@
     <ItemGroup>
       <None Remove="Assets\three-dots-loading.svg" />
     </ItemGroup>
-
-
-    <ItemGroup>
-      <Folder Include="DTOs\" />
-      <Folder Include="Models\" />
-    </ItemGroup>
 </Project>

@@ -39,7 +39,8 @@
                     FontSize="16"
                     FontWeight="400"
                     Padding="10"
-                    Margin="0,0,0,20" />
+                    Margin="0,0,0,20"
+                    Text="{Binding DiscordToken}"/>
             </StackPanel>
 
             <Button
