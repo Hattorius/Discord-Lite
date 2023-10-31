@@ -1,0 +1,33 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:viewModels="clr-namespace:Discord_Lite.ViewModels"
+             x:DataType="viewModels:CaptchaViewModel"
+             mc:Ignorable="d"
+             x:Class="Discord_Lite.Views.CaptchaView">
+    <Border
+        Background="#313338"
+        Padding="4"
+        HorizontalAlignment="Center"
+        VerticalAlignment="Center"
+        CornerRadius="5"
+        Width="440"
+        Height="360">
+        <Panel Margin="12">
+            <Button
+                HorizontalAlignment="Right"
+                VerticalAlignment="Top"
+                Width="24"
+                Height="24"
+                Background="Transparent"
+                Cursor="Hand"
+                Command="{Binding CloseModal}">
+                <Canvas Width="24" Height="24">
+                    <Path Data="M18.4 4L12 10.4L5.6 4L4 5.6L10.4 12L4 18.4L5.6 20L12 13.6L18.4 20L20 18.4L13.6 12L20 5.6L18.4 4Z" Fill="#b5bac1"/>
+                </Canvas>
+            </Button>
+            <TextBlock>Hi</TextBlock>
+        </Panel>
+    </Border>
+</UserControl>

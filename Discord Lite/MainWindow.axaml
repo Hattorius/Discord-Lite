@@ -15,7 +15,19 @@
         FontWeight="400"
         Foreground="#b5bac1"
         FontFamily="Helvetica">
+    
     <Panel>
         <Panel Name="ContentHolder"></Panel>
+        <Panel Name="ModalHolder"
+               HorizontalAlignment="Stretch"
+               VerticalAlignment="Stretch"
+               IsVisible="False"
+               Tapped="ModalHolder_OnTapped">
+            <Panel.Background>
+                <SolidColorBrush Color="Black" Opacity="0.2"/>
+            </Panel.Background>
+            
+            <Panel Name="ModalHolderContent"/>
+        </Panel>
     </Panel>
 </Window>

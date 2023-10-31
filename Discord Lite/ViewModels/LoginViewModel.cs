@@ -1,5 +1,6 @@
 using System.ComponentModel;
 using Avalonia.Interactivity;
+using Discord_Lite.Views;
 
 namespace Discord_Lite.ViewModels;
 
@@ -23,7 +24,8 @@ public class LoginViewModel : INotifyPropertyChanged
         IsLoginLoading = true;
         
         // TODO: Login logic
-        MainWindow?.SwitchToMain();
+        // MainWindow?.SwitchToMain();
+        MainWindow?.Modals.AddModal(new CaptchaView(MainWindow));
 
         IsLoginLoading = false;
     }
