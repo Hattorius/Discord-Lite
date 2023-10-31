@@ -30,7 +30,7 @@
                     FontWeight="700"
                     FontSize="12"
                     Margin="0,0,0,8">
-                    EMAIL OR PHONE NUMBER
+                    DISCORD TOKEN
                     <TextBlock Foreground="#f23f42">*</TextBlock>
                 </TextBlock>
                 <TextBox
@@ -40,22 +40,6 @@
                     FontWeight="400"
                     Padding="10"
                     Margin="0,0,0,20" />
-
-                <TextBlock
-                    FontWeight="700"
-                    FontSize="12"
-                    Margin="0,0,0,8">
-                    PASSWORD
-                    <TextBlock Foreground="#f23f42">*</TextBlock>
-                </TextBlock>
-                <TextBox
-                    Background="#1e1f22"
-                    BorderThickness="0"
-                    FontSize="16"
-                    FontWeight="400"
-                    Padding="10"
-                    Margin="0,0,0,20"
-                    PasswordChar="•" />
             </StackPanel>
 
             <Button

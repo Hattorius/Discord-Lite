@@ -24,8 +24,7 @@ public class LoginViewModel : INotifyPropertyChanged
         IsLoginLoading = true;
         
         // TODO: Login logic
-        // MainWindow?.SwitchToMain();
-        MainWindow?.Modals.AddModal(new CaptchaView(MainWindow));
+        MainWindow?.SwitchToMain();
 
         IsLoginLoading = false;
     }

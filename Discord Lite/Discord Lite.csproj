@@ -16,6 +16,8 @@
         <PackageReference Include="Avalonia.Fonts.Inter" Version="11.0.2" />
         <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
         <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="11.0.2" />
+        <PackageReference Include="Flurl.Http" Version="4.0.0-pre5" />
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     </ItemGroup>
 
 
@@ -26,5 +28,11 @@
 
     <ItemGroup>
       <None Remove="Assets\three-dots-loading.svg" />
+    </ItemGroup>
+
+
+    <ItemGroup>
+      <Folder Include="DTOs\" />
+      <Folder Include="Models\" />
     </ItemGroup>
 </Project>
