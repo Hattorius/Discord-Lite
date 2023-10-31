@@ -1,0 +1,85 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Discord_Lite.LoginWindow"
+        Title="LoginWindow"
+        ExtendClientAreaToDecorationsHint="True"
+        MinWidth="520"
+        MinHeight="404"
+        Background="#1e1f22"
+        FontSize="16"
+        FontWeight="400"
+        Foreground="#b5bac1"
+        FontFamily="Helvetica">
+    <Border
+        CornerRadius="5"
+        Background="#313338"
+        Width="480"
+        Height="344"
+        Margin="20">
+        <StackPanel Margin="32">
+            <TextBlock
+                Foreground="#f2f3f5"
+                TextAlignment="Center"
+                FontSize="24"
+                FontWeight="600"
+                Margin="0,0,0,8">
+                Welcome back!
+            </TextBlock>
+            <TextBlock
+                Foreground="#b5bac1"
+                TextAlignment="Center">
+                We're so excited to see you again!
+            </TextBlock>
+
+            <StackPanel Margin="0,20,0,0">
+                <TextBlock
+                    FontWeight="700"
+                    FontSize="12"
+                    Margin="0,0,0,8">
+                    EMAIL OR PHONE NUMBER
+                    <TextBlock Foreground="#f23f42">*</TextBlock>
+                </TextBlock>
+                <TextBox
+                    Background="#1e1f22"
+                    BorderThickness="0"
+                    FontSize="16"
+                    FontWeight="400"
+                    Padding="10"
+                    Margin="0,0,0,20" />
+
+                <TextBlock
+                    FontWeight="700"
+                    FontSize="12"
+                    Margin="0,0,0,8">
+                    PASSWORD
+                    <TextBlock Foreground="#f23f42">*</TextBlock>
+                </TextBlock>
+                <TextBox
+                    Background="#1e1f22"
+                    BorderThickness="0"
+                    FontSize="16"
+                    FontWeight="400"
+                    Padding="10"
+                    Margin="0,0,0,20"
+                    PasswordChar="•" />
+            </StackPanel>
+
+            <Button
+                Width="416"
+                Height="40"
+                Padding="16, 2"
+                Margin="0, 16"
+                Background="#5865f2"
+                Foreground="#fff">
+                <TextBlock
+                    VerticalAlignment="Center"
+                    TextAlignment="Center">
+                    Log In
+                </TextBlock>
+            </Button>
+        </StackPanel>
+    </Border>
+</Window>
